@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="MEGICpg2.css">
+<script src="MEGICpg2.js"></script>
+<script type="text/javascript" src="draggin.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div class="hospitalImageContainer">
+<img id="hospitalImage" src="patientMEGIC4.jpg" usemap="#workmap">
+
+<div class="questionContainer" id="questionContainer">
+<form>
+Is his airway patent/protected?<br>
+<input type="radio" id="patentYes" name="patent">Yes<br>
+<input type="radio" id="patentNo" name="patent">No<br>
+</form>
+
+<form>
+Is his breathing optimized?<br>
+<input type="radio" id="breathingYes" name="breathing">Yes<br>
+<input type="radio" id="breathingNo" name="breathing">No<br>
+</form>
+
+<p class="nextButtomForm" onclick="nextQuestion()">>>Next</p>
+</div>
+
+<div class="administerContainer" id="administerContainer"></div>
+<div class="administerContainerAbove" id="administerContainerAbove">
+<p id="administer">What would you like to administer?</p>
+<!--items for administration -->
+<ul class="columnformat">
+<li><img class="draggable mask" id="nonrebreathermask" src="nonrebreathermask1.png" onclick="checkForPress()"></li>
+<li><img class="draggable sabultamol" id="sabultamol" src="sabultamol1.png" onclick="checkForPress()"></li>
+<li><img class="draggable niv" src="niv1.png" id="niv" onclick="checkForPress()"></li>
+<li><img class="draggable supplementaloxygen" id="supplementaloxygen" src="supplementaloxygen1.png" onclick="checkForPress()"></li>
+</ul>
+<!--shows that you click and drag item-->
+<p id="showMe">Hello</p>
+</div>
+
+
+<div class="circle">
+<div class="previous">
+<a href="MEGIC.html">Previous</a>
+</div>
+</div>
+
+<script type="text/javascript" src="draggin.min.js"></script>
+</div>
+
+</body>
+</html>

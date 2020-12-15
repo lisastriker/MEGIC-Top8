@@ -1,0 +1,51 @@
+<div class="slideContainer">
+<input type="range" min="1" max="15" value="5" class="slider" id="myRange">
+<p id="litres">Litres / Min : <span id="slideAmount"></span></p>
+</div>
+
+
+<div class="questionContainer" id="questionContainer">
+<form>
+Is his airway patent/protected?<br>
+<input type="radio" id="patentYes" name="patent">Yes<br>
+<input type="radio" id="patentNo" name="patent">No<br>
+</form>
+
+<form>
+Is his breathing optimized?<br>
+<input type="radio" id="breathingYes" name="breathing">Yes<br>
+<input type="radio" id="breathingNo" name="breathing">No<br>
+</form>
+
+<p class="nextButtomForm" onclick="nextQuestion()">>>Next</p>
+</div>
+
+<div class="administerContainer" id="administerContainer"></div>
+<div class="administerContainerAbove" id="administerContainerAbove">
+<p id="administer">What would you like to administer?</p>
+<!--items for administration -->
+<ul class="columnformat">
+<li><img class="draggable mask" id="nonrebreathermask" src="nonrebreathermask1.png" onclick="checkForPress()"></li>
+<li><img class="draggable sabultamol" id="sabultamol" src="ventolin1.png" onclick="checkForPress()"></li>
+<li><img class="draggable niv" src="niv2.png" id="niv" onclick="checkForPress()"></li>
+<li><img class="draggable supplementaloxygen" id="supplementaloxygen" src="supplementaloxygen1.png" onclick="checkForPress()">
+<li><img class="draggable facemask" id="facemask" src="facemask1.png">
+<li><img class="draggable ventimask" id="ventimask" src="venturimask1.png">
+<li><img class="draggable nasalprongs" id="nasalprongs" src="nasalprongs1.png">
+<li><img class="draggable bagvalvemask" id="bagvalvemask" src="bagvalvemask.png">
+
+
+
+</li>
+</ul>
+<!--shows that you click and drag item-->
+<p id="showMe">Hello</p>
+</div>
+
+
+
+<div class="circle">
+<div class="previous">
+<a href="MEGIC.html">Previous</a>
+</div>
+</div>

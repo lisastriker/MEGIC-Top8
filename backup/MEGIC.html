@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="MEGIC.css">
+<script src="MEGIC.js"></script>
+<script type="text/javascript" src="draggin.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+
+<div id="hospitalImage">
+<div class="cover">
+<div class="typing">
+You are the house officer (HO) of the general surgery ward. 
+</div>
+</div>
+
+<div class="cover1">
+<div class="typing">
+A 60yo Chinese male is warded for acute cholecystitis.
+</div>
+</div>
+
+<div class="cover2">
+<div class="typing">
+He was started on fluid therapy, antibiotics and analgesics. 
+</div>
+</div>
+
+<div class="cover3">
+<div class="typing">
+Shortly after, he calls for help due to difficulty breathing. 
+</div>
+</div>
+
+<div class="cover4">
+<div class="typing2">
+Upon approaching the patient...
+</div>
+</div>
+	
+<img src="patientMEGIC4.jpg" usemap="#workmap">
+
+<map name="workmap" class="workmapOutlines">
+	<area id="monitor" shape="rect" coords="304,309,189,391" alt="monitor" onclick="onOpenClick()">
+	<area id="chest" shape="circle" coords="573,411,34" alt="chest" onclick="audioOpenClick()"> 
+	<area id="mouth" shape="circle" coords="565,311,32" alt="mouth" onclick="purselipsOpenClick()">
+</map>
+
+
+
+<div class="questionContainer">
+<form class="form1">
+The patient has:<br><br>
+<input type="radio" id="wheeze" name="patientHas" value="wheeze" onclick="checkAnswer()">Wheeze
+<input type="radio" id="stridor" name="patientHas" value="stridor" onclick="checkAnswer()">Stridor
+<input type="radio" id="crepitations" name="patientHas" value="crepitations" onclick="checkAnswer()">Crepitations
+<input type="radio" id="clearLungSounds" name="patientHas" value="clearLungSounds" onclick="checkAnswer()">Clear Lung Sounds
+</form>
+<div class="form1answer">
+<p id="demo">The correct answer is that there is no correct answer</p>
+<p id="nextQuestion">Next</p>
+</div>
+</div>
+
+<div class="questionContainer2">
+<form>
+Which vitals are abnormal:<br>
+<input type="checkbox" id="heartrate" name="patientVitals" value="heartrate">Heart Rate<br>
+<input type="checkbox" id="temperature" name="patientVitals1" value="temperature">Temperature<br>
+<input type="checkbox" id="respiratoryrate" name="patientVitals2" value="respiratoryrate">Respiratory Rate<br>
+<input type="checkbox" id="bloodpressure" name="patientVitals3" value="bloodpressure">Blood Pressure<br>
+</form>
+<button onclick="checkAnswer2()">Check Answer</button>
+<p id="answer2"></p>
+</div>
+
+<div class = "vitalsContainer">
+	<img src="vitalsshort.jpg" class="popuptext" id="vitalsPopup">
+</div>
+<div class="purselipsContainer">
+<img src="purselips.jpg" class="popuplips" id="purselipsPopup">
+</div>
+<div class="stridorContainer">
+<audio controls id="stridorSound" class="popupaudio" src="stridor.mp3" Your browser does not support the <code>audio</code>>
+</audio>
+</div>
+
+<div class="circle">
+<div class="helpIcon">
+<a href="MEGICpg2.html">Next</a>
+</div>
+</div>
+
+</div>
+
+<script type="text/javascript" src="draggin.min.js"></script>
+</body>
+</html>

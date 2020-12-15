@@ -1,0 +1,231 @@
+#hospitalImage {
+	position:absolute;
+	user-select:none;
+	-webkit-user-select:none;
+
+}
+
+
+.columnformat {
+	padding-left: 0;
+	position:relative;
+	display: inline-flex;
+	width:100%;
+	margin:10px 0px 10px 0px;
+	height: 150px;
+	bottom:0px;
+}
+/*unorderedlist column*/
+ul{
+	column-count:5;
+	-webkit-column-count:5;
+	list-style-type:none;
+}
+
+li {
+	display:block;
+}
+
+.listformat {
+	display:inline-block;
+	width:150px;
+}
+
+.administerContainer{
+	visibility:visible;
+	position:absolute;
+	background-color:black;
+	opacity:0.5;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:auto;
+}
+
+#administer{
+	font-family: monospace;
+    font-size: 1.2em;
+	width: 45%;
+    text-align: center;
+	color:white;
+	float:left;
+	position:relative;
+	display:inline-flex;
+	z-index:1;
+	padding-left:20px
+}
+
+#administer1{
+	font-family: monospace;
+    font-size: 1.2em;
+	width: 45%;
+    text-align: center;
+	color:white;
+	float:left;
+	position:relative;
+	display:inline-flex;
+	z-index:1;
+	padding-left:20px
+}
+
+
+.administerContainerLeft{
+	visibility:visible;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+.administerContainerRight{
+	padding-left:3%;
+	position:absolute;
+	left:40%;
+	bottom:0;
+	
+}
+
+
+#supplementaloxygen:active, #nonrebreathermask:active{
+	border-color:green;
+}
+
+
+#sabultamol:active, #niv:active, #cortisol:active, #facemask:active, #ventimask:active, #nasalprongs:active, #bagvalvemask:active{
+	border-color:red;
+}
+
+#sabultamol, #niv, #supplementaloxygen, #cortisol{
+	height:150px;
+	width:150px;
+	border-color:black;
+	border:solid 4px;
+}
+
+#facemask, #ventimask, #nasalprongs, #bagvalvemask, #nonrebreathermask{
+	height:150px;
+	width:150px;
+	border-color:black;
+	border:solid 4px;
+}
+
+#dot {
+    top: 21%;
+    left: 44%;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: solid 4px red;
+	visibility:hidden;
+	z-index:1;
+	cursor:pointer;
+}
+/*
+#circle{
+	visibility:hidden;
+}*/
+
+
+@keyframes type {
+	from{
+		margin-right:100%;
+	}
+	to{
+		margin-right:0%;
+	}
+}
+
+@-webkit-keyframes type {
+	from{
+		margin-right:100%;
+	}
+	to{
+		margin-right:0%;
+	}
+	
+}
+
+@-moz-keyframes type{
+	from{
+		margin-right:100%;
+	}
+	to{
+		margin-right:0%;
+	}
+	
+}
+
+@-o-keyframes type{
+	from{
+		margin-right:100%;
+	}
+	to{
+		margin-right:0%;
+	}
+}
+
+@media only screen and (min-width : 1030px) and (max-width : 1385px) {
+	#hospitalImage{
+		position:absolute;
+		user-select:none;
+		-webkit-user-select:none;
+		transform:scale(0.9,0.9);
+		transform-origin:0 0;
+	}
+  
+}
+
+@media only screen and (min-width : 1386px) and (max-width:1824px) {
+	#hospitalImage{
+		position:absolute;
+		user-select:none;
+		-webkit-user-select:none;
+		transform:scale(1,1);
+		transform-origin:0 0;
+	}
+  
+}
+
+@media only screen and (min-width : 1824px) {
+	#hospitalImage{
+		position:absolute;
+		user-select:none;
+		-webkit-user-select:none;
+		transform:scale(1.1,1.1);
+		transform-origin:0 0;
+	}
+}
+	
+
+@media only screen and (max-width: 1030px) and (min-device-width : 769px)  {
+	#hospitalImage{
+		position:absolute;
+		user-select:none;
+		-webkit-user-select:none;
+		transform:scale(0.65,0.65);
+		transform-origin:0 0;
+	}
+  
+}
+
+@media only screen and (max-width: 768px) and (min-device-width : 500px)  {
+	#hospitalImage{
+		position:absolute;
+		user-select:none;
+		-webkit-user-select:none;
+		transform:scale(0.6,0.6);
+		transform-origin:0 0;
+	}
+  
+}
+
+@media only screen and and (min-device-width : 320px) and (max-device-width : 768px) {
+	#hospitalImage{
+		position:absolute;
+		user-select:none;
+		-webkit-user-select:none;
+		transform:scale(0.5,0.5);
+		transform-origin:0 0;
+	}
+  
+}

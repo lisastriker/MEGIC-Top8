@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="new.css">
+
+<script src="new.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="hospitalImage">
+	
+<img src="picture/patientMEGICpg2.jpg" usemap="#workmap">
+
+
+<div class="administerContainer" id="administerContainer">
+<p id="administer">WHAT would you like to administer? Drag and drop into the above squares.</p>
+<p id="administer1">HOW would you like to administer? Drag and drop into the above squares.</p>
+</div>
+<div class="administerContainerLeft" id="administerContainerLeft">
+<!--items for administration -->
+<ul class="columnformat">
+<li class="listformat"><img class="draggable sabultamol" id="sabultamol" src="picture/ventolin1.png" ontouchmove="checkForPress()" onclick="checkForPress()"></li>
+<li class="listformat"><img class="draggable niv" id="niv" src="picture/niv2.png" ontouchmove="checkForPress()" onclick="checkForPress()"></li>
+<li class="listformat"><img class="draggable supplementaloxygen" id="supplementaloxygen" src="picture/supplementaloxygen1.png" ontouchmove="checkForPress()" onclick="checkForPress()"></li>
+<li class="listformat"><img class="draggable cortisol" id="cortisol" src="picture/cortisol2.png" ontouchmove="checkForPress()" onclick="checkForPress()"></li>
+</ul>
+</div>
+
+<div class="administerContainerRight" id="administerContainerRight">
+<ul class="columnformat">
+<li class="listformat"><img class="draggable mask" id="nonrebreathermask" src="picture/nonrebreathermask1.png" ontouchmove="checkForPress1()" onclick="checkForPress1()"></li>
+<li class="listformat"><img class="draggable facemask" id="facemask" src="picture/facemask1.png" ontouchmove="checkForPress1()" onclick="checkForPress1()"></li>
+<li class="listformat"><img class="draggable ventimask" id="ventimask" src="picture/venturimask1.png" ontouchmove="checkForPress1()" onclick="checkForPress1()"></li>
+<li class="listformat"><img class="draggable nasalprongs" id="nasalprongs" src="picture/nasalprongs1.png" ontouchmove="checkForPress1()" onclick="checkForPress1()"></li>
+<li class="listformat"><img class="draggable bagvalvemask" id="bagvalvemask" src="picture/bagvalvemask.png" ontouchmove="checkForPress1()" onclick="checkForPress1()"></li>
+</ul>
+</div>
+<script type="text/javascript" src="draggin.min.js"></script>
+
+
+
+</div>
+
+</body>
+</html>

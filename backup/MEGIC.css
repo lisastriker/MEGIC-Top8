@@ -1,0 +1,259 @@
+.show {display: block;}
+html{
+	display:relative;
+}
+body{
+	display:relative;
+}
+
+/*Hospital frame*/
+form{
+	align-content:center;
+}
+
+#hospitalImage {
+	position:absolute;
+	border-style:solid;
+	border-width:5px;
+	user-select:none;
+	-webkit-user-select:none;
+
+}
+
+#monitor{
+	cursor:pointer;
+}
+
+#chest{
+	cursor:pointer;
+}
+
+#mouth{
+	cursor:pointer;
+}
+
+.hide {
+	display:none;
+}
+
+.vitalsContainer {
+	top:0;
+	width:100%;
+	display:flex; /*makes it flexi with margin:auto*/
+	position:absolute;
+	z-index:1;
+}
+
+.vitalsContainer .popuptext {
+	margin-top:2%;
+	margin-left:5%;
+	visibility:hidden;
+	width:350px;
+	z-index:1;
+}
+
+.vitalsContainer .showThis {
+	visibility:visible;
+	z-index:1;
+	animation:fadeIn 1s;
+	-webkit-animation: fadeIn 1s;
+}
+
+.stridorContainer{
+	width:18%;
+	display:flex;
+	position:absolute;
+	z-index:2;
+	bottom:45%;
+	right:40%
+}
+
+.stridorContainer .popupaudio{
+	margin:auto;
+	visibility:hidden;
+	z-index:2;
+}
+
+.stridorContainer .showThisOne {
+	visibility:visible;
+	z-index:2;
+}
+
+.radioForm {
+	display:block;
+	z-index:1;
+}
+
+.purselipsContainer{
+	display:flex;
+	position:absolute;
+	top:30%;
+	left:44%;
+	z-index:0;
+}
+
+.purselipsContainer .popuplips{
+	width:100px;
+	visibility:hidden;
+	z-index:3;
+	margin: auto;
+    padding-right: 5%;
+}
+
+
+.purselipsContainer .showThisTwo {
+	visibility:visible;
+	z-index:1;
+}
+
+.questionContainer{
+	background-color:black;
+	opacity:0.5;
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+
+.questionContainer2{
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+.form1{
+	display:inline-flex;
+	color:white;
+	padding-left:30%;
+	padding-top:2%;
+}
+
+.form1answer{
+	padding-left:30%;
+	color:white;
+	margin-bottom:1%;
+}
+
+#demo{
+	display:inline-block;
+	margin:0;
+	visibility:hidden;
+}
+
+#nextQuestion{
+	border:white solid 2px;
+	cursor:pointer;
+	text-decoration:underline;
+	color:white;
+	font-size:1.5em;
+	position:absolute;
+	bottom:0;
+	right:20%;
+}
+@-webkit-keyframes greenPulse {
+from { -webkit-box-shadow: 0 0 1px #AFE30E; }
+50% {  -webkit-box-shadow: 0 0 18px #91bd09; }
+to {-webkit-box-shadow: 0 0 9px #8FB518; }
+}
+
+.circle {
+	position:absolute;
+	bottom:0;
+	right:0;
+	display:flex;
+}
+
+.helpIcon {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  z-index: 1;
+  -webkit-animation-name: greenPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  text-align:center;
+  font-size:2em;
+}
+
+.cover{
+	display:flex;
+	animation: type 7s steps(7, end) forwards;
+	-webkit-animation: type 7s steps(7,end) forwards;
+}
+.typing {
+	font-size:1.2em;
+	position:relative;
+	display:inline-block;
+	width: 100%;
+	white-space:nowrap;
+    overflow:hidden;
+	
+}
+
+.cover1{
+	display:flex;
+	margin-right:100%;
+	animation: type 7s steps(7, end) forwards;
+	-webkit-animation: type 7s steps(7,end) forwards;
+	animation-delay:3s;
+	-webkit-animation-delay:3s;
+}
+	
+	
+
+.typing2{
+	font-size:1.2em;
+	position:relative;
+	display:inline-block;
+	width: 100%;
+	white-space:nowrap;
+    overflow:hidden;
+	
+}
+
+.cover2{
+	display:flex;
+	margin-right:100%;
+	animation: type 7s steps(7, end) forwards;
+	-webkit-animation: type 7s steps(7,end) forwards;
+	animation-delay:6s;
+	-webkit-animation-delay:6s;
+}
+.cover3{
+	display:flex;
+	margin-right:100%;
+	animation: type 7s steps(7, end) forwards;
+	-webkit-animation: type 7s steps(7,end) forwards;
+	animation-delay:9s;
+	-webkit-animation-delay:9s;
+}
+.cover4{
+	display:flex;
+	margin-right:100%;
+	animation: type 7s steps(7, end) forwards;
+	-webkit-animation: type 7s steps(7,end) forwards;
+	animation-delay:12s;
+	-webkit-animation-delay:12s;
+}
+
+@keyframes type {
+	from{
+		margin-right:100%;
+	}
+	to{
+		margin-right:0%;
+	}
+}
+
+@-webkit-keyframes type {
+	from{
+		margin-right:100%;
+	}
+	to{
+		margin-right:0%;
+	}
+	
+}

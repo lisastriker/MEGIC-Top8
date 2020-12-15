@@ -1,0 +1,309 @@
+html{
+	display:relative;
+}
+body{
+	display:relative;
+}
+
+/*Hospital frame*/
+
+#hospitalImage {
+	position:absolute;
+	user-select:none;
+	-webkit-user-select:none;
+
+}
+
+#monitor {
+	cursor:pointer;
+}
+
+
+/*Cover container */
+.coverContainer{
+	height:8%;
+	padding:1% 1% 1% -1%;
+	font-family:monospace;
+	width:100%;
+	opacity:0.8;
+	background-color:black;
+	color:white;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.cover{
+	padding-top: 0.5%;
+	padding-left:2%;
+	display:flex;
+	animation: type 4s steps(7, end) forwards;
+	-webkit-animation: type 4s steps(7,end) forwards;
+}
+.typing {
+	font-size:1.2em;
+	position:relative;
+	display:inline-block;
+	width: 100%;
+	white-space:nowrap;
+    overflow:hidden;
+	
+}
+
+.cover1{
+	padding-left:2%;
+	display:flex;
+	margin-right:100%;
+	animation: type 4s steps(7, end) forwards;
+	-webkit-animation: type 4s steps(7,end) forwards;
+	animation-delay:2s;
+	-webkit-animation-delay:2s;
+}
+	
+
+
+@keyframes type {
+	from{
+		margin-right:100%;
+	}
+	to{
+		margin-right:0%;
+	}
+}
+
+@-webkit-keyframes type {
+	from{
+		margin-right:100%;
+	}
+	to{
+		margin-right:0%;
+	}
+	
+}
+
+@-moz-keyframes type{
+	from{
+		margin-right:100%;
+	}
+	to{
+		margin-right:0%;
+	}
+	
+}
+
+@-o-keyframes type{
+	from{
+		margin-right:100%;
+	}
+	to{
+		margin-right:0%;
+	}
+}
+
+
+/* Vitals Container */
+.hide {
+	display:none;
+}
+
+.vitalsContainer {
+	top: 7.5%;
+    left: 2%;
+	display:flex; /*makes it flexi with margin:auto*/
+	position:absolute;
+	z-index:1;
+}
+
+.vitalsContainer .popuptext {
+	margin-top:2%;
+	margin-left:5%;
+	visibility:hidden;
+	width:350px;
+	z-index:1;
+}
+
+.vitalsContainer .showThis {
+	visibility:visible;
+	z-index:1;
+	animation:fadeIn 1s;
+	-webkit-animation: fadeIn 1s;
+}
+
+/*Question Container*/
+
+form{
+	margin-left:35%;
+	display: block;
+	color:white;
+	position:relative;
+	text-align:left;
+	z-index:1;
+	
+}
+#nextButton, #nextButton1, #nextButton2{
+	padding-left:1%;
+	visibility:hidden;
+	background-color:black;
+	position:relative;
+	border:white solid 2px;
+	cursor:pointer;
+	color:white;
+	font-size:1em;
+	display:block;
+	bottom:0;
+	width:15%;
+	margin:auto;
+
+}
+
+
+.questionContainer {
+    height: 20%;
+	font-family: monospace;
+    font-size: 1.2em;
+	text-align:center;
+	position:absolute;
+	background-color:black;
+	width:100%;
+	opacity:0.8;
+	bottom:0;
+	left:0;
+	z-index:2;
+	padding: 2% 0% 2% 0%;
+}
+
+.questionContainer1, .questionContainer2{
+	height: 20%;
+	font-family: monospace;
+    font-size: 1.2em;
+	visibility:hidden;
+	text-align:center;
+	position:absolute;
+	background-color:black;
+	width:100%;
+	opacity:0.8;
+	bottom:0;
+	left:0;
+	z-index:2;
+	padding: 2% 0% 2% 0%;
+	
+}
+
+#answer1, #answer2, #answer3{
+	display:block;
+	color: white;
+    margin: 1.5% 0% 0.7% 0%;
+	visibility:hidden;
+}
+
+.tableContainer{
+	color:white;
+	visibility:hidden;
+	background-color:black;
+	position:absolute;
+	bottom:0%;
+	width:100%;
+	opacity:0.8;
+	font-family: monospace;
+    font-size: 1.2em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#matchAnswer{
+	float:top;
+}
+
+.endGame{
+	border:solid red 4px;
+	height:200px;
+	width:200px;
+	background-color:white;
+	opacity:0.8;
+	color:red;
+	position:absolute;
+	left:40%;
+	top:40%;
+	visibility:hidden;
+}
+
+#endGameSentence{
+	display:inline-block;
+	margin:auto;
+	margin-top: 40%;
+    text-align: center;
+}
+
+@media only screen and (min-width : 1030px) and (max-width : 1385px) {
+	#hospitalImage{
+		position:absolute;
+		user-select:none;
+		-webkit-user-select:none;
+		transform:scale(0.9,0.9);
+		transform-origin:0 0;
+	}
+  
+}
+
+@media only screen and (min-width : 1386px) and (max-width:1824px) {
+	#hospitalImage{
+		position:absolute;
+		user-select:none;
+		-webkit-user-select:none;
+		transform:scale(1,1);
+		transform-origin:0 0;
+	}
+  
+}
+
+@media only screen and (min-width : 1824px) {
+	#hospitalImage{
+		position:absolute;
+		user-select:none;
+		-webkit-user-select:none;
+		transform:scale(1.1,1.1);
+		transform-origin:0 0;
+	}
+}
+	
+
+@media only screen and (max-width: 1030px) and (min-device-width : 769px)  {
+	#hospitalImage{
+		position:absolute;
+		user-select:none;
+		-webkit-user-select:none;
+		transform:scale(0.65,0.65);
+		transform-origin:0 0;
+	}
+  
+}
+
+@media only screen and (max-width: 768px) and (min-device-width : 500px)  {
+	#hospitalImage{
+		position:absolute;
+		user-select:none;
+		-webkit-user-select:none;
+		transform:scale(0.6,0.6);
+		transform-origin:0 0;
+	}
+  
+}
+
+@media only screen and and (min-device-width : 320px) and (max-device-width : 768px) {
+	#hospitalImage{
+		position:absolute;
+		user-select:none;
+		-webkit-user-select:none;
+		transform:scale(0.5,0.5);
+		transform-origin:0 0;
+	}
+  
+}
